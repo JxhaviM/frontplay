@@ -4,6 +4,7 @@ import {
   compose,
   applyMiddleware,
 } from "redux";
+import juegoReducer from "../reducers/juegoReducer";
 import thunk from "redux-thunk";
 
 
@@ -13,7 +14,7 @@ const composeEnhancers =
   compose;
 
 const reducers = combineReducers({
-  
+  juegoReducer
 });
 
 const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));

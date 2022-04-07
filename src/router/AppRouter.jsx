@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PaginaInicio from "../pages/PaginaInicio";
 import PaginaJuego from "../pages/PaginaJuego";
 import Configuracion from "../pages/Configuracion";
+import PaginaHistorico from "../pages/PaginaHistorico";
 
 const AppRouter = () => {
  
@@ -12,6 +13,7 @@ const AppRouter = () => {
       <Route exact path="/inicio" element={<PaginaInicio/>} />
       <Route path="/juego" element={<PaginaJuego/>} />
       <Route path="/creacion-pregunta" element={<Configuracion/>} />
+      <Route path="/datos-historico" element={<PaginaHistorico/>} />
       
 
       {/* Default route */}
