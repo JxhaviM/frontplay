@@ -51,8 +51,7 @@ export const Pregunta = () => {
     
     } else {
       window.alert("respuesta Incorrecta");
-    }
-    console.log(respuestaSeleccionada);
+    }    
   };
   const navigate = useNavigate();
   const [respuestaSeleccionada, setRespuestaSeleccionada] = useState();
