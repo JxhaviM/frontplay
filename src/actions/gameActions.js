@@ -61,7 +61,6 @@ export const startFetchCategoryIdByName = async (category) => {
 
 export const startCreateNewQuestion = async (question) => {
   try {
-      alert(JSON.stringify(question))
     const response = await fetch(`${urlBase}/pregunta/crear`, {
       method: "POST",
       headers: {
